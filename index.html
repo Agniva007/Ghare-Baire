@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HOTEL GHARE-BAIRE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <link rel = "icon" href = "images/logo1.png" type = "image/png">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span><img src="images/logo1.png" alt="loading.." class="logo" style="float: left"><b>GHARE-BAIRE</b></span>
+                </div>
+                <div class="navigation">
+                    <div class="navigation-items">
+                        <a href="#header">HOME</a>
+                        <a href="#services">SERVICES</a>
+                        <a href="#rooms">ROOMS</a>
+                        <a href="#customers">CUSTOMERS</a>
+                    </div>
+                </div>
+                
+                <div class = "site-nav">
+                    <span id = "nav-btn">SIGN IN <i class = "fa fa-user"></i></span>
+                </div> 
+                
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>NICE AND COMFORTABLE PLACE TO STAY</h2>
+                <p>Looking for a vacation to leave behind the hustle of everyday life and indulge in world-class hospitality at exotic locations? Look no further than the leading & fastest growing hotel chain of Eastern India, Hotel Ghare-Baire. Your unwinding days with us will be the perfect blend of leisure, comfort, convenience & class.</p>
+                <button type = "button" class = "head-btn"><a href="#booking">BOOK NOW!!</a></button>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <div>
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+            </div>
+            <br>
+            <br>
+            <div class="sign-up">
+            <form action="">
+                <div class="form-item">
+                    <input type="text" name="firstName" id="firstName" placeholder="User-Name">
+                </div>
+    
+                <div class="form-item">
+                    <input type="email" name="email" id="email" placeholder="abc@example.com">
+                </div>
+    
+                <div class="form-item">
+                    <!-- add a password format display -->
+                    <span class="pwd-format">
+                        8-15 AlphaNumeric Characters
+                    </span>
+                    <input type="password" name="password" id="password" placeholder="Enter password">
+                    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm password">
+                </div>
+    
+                <div class="accept-box">
+                    <input type="checkbox" name="accept" id="accept">
+                    <p>I accept the <a href="#">Terms & Conditions</a></p>
+                </div>
+    
+                <div class="form-btns">
+                    <button class="signup" type="submit" onclick="sendEmail();">Sign Up</button>
+                    <div class="options">
+                        Already have an account? <a href="#">Login here</a>
+                    </div>
+                </div>
+    
+            </form>
+            </div>
+            
+        </div>
+        <!-- end of side navbar -->
+        
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h5>services</h5>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Food Service/ Food Runner</h2>
+                        <p>Indulge in some much needed pampering with our all-inclusive holiday offer. Daily Breakfast and meals (pre set Lunch and Dinner) across applicable outlets. Ideal destination for spending quality time with your loved ones and complete with spa, gym, bar, swimming pool.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-swimming-pool"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Refreshment</h2>
+                        <p>All of our properties aim at combining nature, comfort, amenities and exquisite multi-cuisine to satisfy all your moods and taste buds. Winning much love from our esteemed guests and accolades throughout the hospitality industry for our wonderful hospitality.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Housekeeping</h2>
+                        <p>Housekeeping department in hotel ensures the cleanliness, maintenance, and aesthetic appeal of all rooms and public areas. The housekeeping department not only turnarounds (prepares and clean guestrooms) on a timely manner it also cleans and maintains everything in the hotel.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Room Security</h2>
+                        <p>Hotel Guest room Security locks can be a critical aspect of guest protection. Locks and locking systems are needed which lend themselves to the smooth and efficient operation of the property, but which are not easily compromised.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+
+        <div class = "book" id="booking">
+            <form class = "book-form">
+                <div class = "form-item">
+                    <label for = "checkin-date">Check In Date: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Check Out Date: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adults: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Children: </label>
+                    <input type = "number" min = "0" value = "0" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Rooms: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+                <div class = "form-item">
+                    <!-- <input type = "submit" class = "btn" value = "Book Now"> -->
+                    &nbsp;
+                    <button type="button" class="book-btn" onclick="sign()"><a href="#nav-btn">BOOK NOW</a></button>
+                </div>
+            </form>
+        </div>
+
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <h5>rooms</h5>
+            </div>
+            <div class = "rooms-container">
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/room1.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Presidential Suite</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Air Conditioning, Wi-Fi Internet Access, Television
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Tea & Coffee Maker, Complimentary Breakfast, Mini Bar
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Bathrobe & Bath Slippers, Seperate Living Room
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Room Service, Laundry Service, In room Safe
+                            </li>
+                        </ul>
+                        <p>Presidential Suites in Ghare-Baire Hotel, Kolkata offer the most luxurious accommodation near Kolkata airport. We offer 500 sq. ft. space with classic contemporary features and modern amenities. Book your stay at our Presidential Suite in Kolkata and relax in grandeur and luxury. </p>
+                        <p><br><b>Check-In Time: 14:00 (2:00 PM)</b> <br><b>Check-Out Time: 12:00 (12:00 PM)</b></p>
+                        <p class = "rate">
+                            <span>Rs. 4999.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn"><a href="#booking">book now</a></button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/room2.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Premium Suites</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Air Conditioning, Wi-Fi Internet Access, Television
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Tea & Coffee Maker, Complimentary Breakfast, Mini Bar
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Bathrobe & Bath Slippers, Seperate Living Room
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Room Service, Laundry Service, In room Safe
+                            </li>
+                        </ul>
+                        <p>Our Premium Suites are a true amalgamation of Kolkata tradition with global aesthetics. Enjoy your stay at our lavish Premium Suites in Kolkata. Our spacious hotel rooms in Kolkata are of 420 sq. ft., each offering vivacious flair to relax in. Book your stay with us now and experience luxury like never before!</p>
+                        <p><br><b>Check-In Time: 14:00 (2:00 PM)</b> <br><b>Check-Out Time: 12:00 (12:00 PM)</b></p>
+                        <p class = "rate">
+                            <span>Rs. 3999.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn"><a href="#booking">book now</a></button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/room3.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Superior</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Air Conditioning, Wi-Fi Internet Access, Television
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Tea & Coffee Maker, Complimentary Breakfast, Mini Bar
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Bathrobe & Bath Slippers, Seperate Living Room
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Room Service, Laundry Service, In room Safe
+                            </li>
+                        </ul>
+                        <p>Ghare-Baire Hotel, Kolkata offers comfortable and spacious rooms of 330 sq ft with king-size beds and contemporary furnishings. We have 39 superior rooms to comfortably accommodate our guests. Relax and enjoy your stay in our superior rooms near Kolkata airport.</p>
+                        <p><br><b>Check-In Time: 14:00 (2:00 PM)</b> <br><b>Check-Out Time: 12:00 (12:00 PM)</b></p>
+                        <p class = "rate">
+                            <span>Rs. 3200.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn"><a href="#booking">book now</a></button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/room4.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Deluxe</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Air Conditioning, Wi-Fi Internet Access, Television
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Tea & Coffee Maker, Complimentary Breakfast, Mini Bar
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Bathrobe & Bath Slippers, Seperate Living Room
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Room Service, Laundry Service, In room Safe
+                            </li>
+                        </ul>
+                        <p>Experience 5-star luxury and warm hospitality at our Deluxe rooms in Kolkata. We provide a comfortable stay to both corporate and leisure travellers alike. With elegant interiors in our 300 sq ft space and modern amenities our deluxe rooms are undoubtedly worth the splurge. </p>
+                        <p><br><b>Check-In Time: 14:00 (2:00 PM)</b> <br><b>Check-Out Time: 12:00 (12:00 PM)</b></p>
+                        <p class = "rate">
+                            <span>Rs. 2830.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn"><a href="#booking">book now</a></button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+            </div>
+        </section>
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h5>customers</h5>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>We Loved it</h3>
+                        <p>Excellent hotel with good ambience. Located at 1 hr drive from airport and a convenient place for visiting the tourist spots as the hotel is a middle point. Food is top notch and the Covid guidelines are followed properly. Polite staff and in all the best hotel for stay anytime in Kolkata</p>
+                        <img src = "images/cus1.jpg" alt = "customer image">
+                        <span>Sanjeev Chauhan, New Delhi</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Comfortable Living</h3>
+                        <p>It's really a Great Hotel. It has been named properly Ghare-Baire.. justified. I had been there several times. Everytime different kind of awesome & amazing experiences I have gathered. All the staffs are very polite & humble. The food quality is best among all 5 star hotels. Will be visiting soon.</p>
+                        <img src = "images/cus2.jpg" alt = "customer image">
+                        <span>Neelanjana Basu, Darjeeling</span>
+                    </div>
+                    <!-- end of single customer -->
+                </div>
+            </div>
+        </section>
+        <!-- end of body content -->
+
+        <section class="about-us" id="about us">
+            <div class="sec-width">
+                <div class="map-container">
+                    <div class="">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.8825511447812!2d88.3951473144391!3d22.546071985196505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02769e9c431c4d%3A0x884f3ca00471b396!2sITC%20Royal%20Bengal%2C%20a%20Luxury%20Collection%20Hotel%2C%20Kolkata!5e0!3m2!1sen!2sin!4v1640786536101!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        
+                    </div> 
+                    <!-- <div class="about-content">
+                        <p>Located on the cusp of business district & the city, ITC Royal Bengal is an ode to the region’s cultural heritage and lineage. The hotel offers 456 rooms & suites including 82 serviced apartments, 5 dining destinations, 5,630 m2 of banqueting space & a luxury spa, Kaya Kalp - The Royal Spa.</p> 
+                    </div> -->
+                </div>
+                <div class="about-content">
+                    <p>Located on the cusp of business district & the city, Ghare-Baire is an ode to the region’s cultural heritage and lineage. The hotel offers 456 rooms & suites including 82 serviced apartments, 5 dining destinations, 5,630 m2 of banqueting space & a luxury spa, Kaya Kalp - The Royal Spa.</p> 
+                </div>
+            </div>
+        </section>
+        
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <p>Ghare-Baire Hotel resonates true Indian Hospitality. Incorporates the Five sense of traditional Indian welcome namely, fragrance, music, ambience, regional Indian paintings and frescoes, and mouth-watering Indian Cuisines.</p>
+                    <ul class = "social-icons">
+                        <li class = "flex1" style="float: left">
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex2" style="float: left">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex3" style="float: left">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Useful Links</h2>
+                    <a href = "#">Blog</a>
+                    <a href = "#">Rooms</a>
+                    <a href = "#">Subscription</a>
+                    <a href = "#">Gift Card</a>
+                </div>
+
+                <div>
+                    <h2>Privacy</h2>
+                    <a href = "#">Career</a>
+                    <a href = "#">About Us</a>
+                    <a href = "#">Contact Us</a>
+                    <a href = "#">Services</a>
+                </div>
+
+                <div>
+                    <h2>Have A Question</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            1, JBS Haldane Ave, Tangra, Kolkata, West Bengal 700046
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <a href="tel: 8697600638"><i class = "fas fa-phone-alt"></i></a>
+                        </span>
+                        <span>
+                            +91 86976 00638
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <a href="mailto: noreply.gharebaire@gmail.com"><i class = "fas fa-envelope"></i></a>
+                        </span>
+                        <span>
+                            noreply.gharebaire@gmail.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+        <script src="script.js"></script>
+    </body>
+</html>
