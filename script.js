@@ -74,9 +74,9 @@ window.addEventListener('click', function(event){
             }
         })
 
-function sign(){
-    alert("Please fill the contact details and sign in with us!!");
-}
+// function sign(){
+//     alert("Please fill the contact details and sign in with us!!");
+// }
 
 // function sendMail(){
 //     alert("Your account has been Registered \nPlease look for a confirmation email sent to \n"+ email);
