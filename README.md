@@ -1,5 +1,5 @@
 # Ghare-Baire
-###A fully responsive hotel management website
+### A fully responsive hotel management website
 
 ![Screenshot (31)](https://user-images.githubusercontent.com/78679487/202457412-75fd0499-c599-43e9-9037-65e57804fc32.png)
 
